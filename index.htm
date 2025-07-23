@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DIEGO VENEGAS</title>
+<style>
+body {top: 0; left: 0; width: 99%; height: 97%;
+    position: absolute; display: table}
+  p {display: table-cell; vertical-align: middle; text-align: center}
+#timezone * {text-decoration: none;}
+
+</style>
+
+<script type="text/javascript">
+    // declare time zone formatting
+    let options = {
+        timeZone: 'America/Santiago',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    },
+    formatter = new Intl.DateTimeFormat([], options);
+
+    // set time
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
+</script>
+</head>
+
+
+
+
+
+<body><p>
+<font size="7"><i><b>DIEGO VENEGAS</b></i></font> <br>
+<br>
+<img style="width:560px;" src="/static/img/zy8BRWw(1).png"><br>
+<br>
+<span id="timezone">
+<i>
+<a href="https://24timezones.com/world_directory/current_salt_lake_city_time.php">TIME IN SANTIAGO</a> - <span id="time"></span> </i>
+</span>
+<br><br>
+
+<a href="/about.html">about</a> //
+<a href="https://github.com/petitmilicen/">github</a> //
+<a href="/projects.html">projects</a> //
+<a href="/contact.html">contact</a>
+
+<br>
+<br>
+
+
+</p></body></html>
